@@ -12,3 +12,23 @@ document.addEventListener('DOMContentLoaded', function () {
         document.body.style.fontSize = `${tamanhoAtualFonte}rem`
     })
 })
+/* Estilo para o modo de alto contraste */
+.alto-contraste {
+    background-color: #000 !important;
+    color: #FFF !important;
+}
+
+.alto-contraste a,
+.alto-contraste h1,
+.alto-contraste h2,
+.alto-contraste h3,
+.alto-contraste p,
+.alto-contraste label {
+    color: #FFF !important;
+}
+
+/* Mantém os botões visíveis */
+.alto-contraste .btn {
+    background-color: #FFF !important;
+    color: #000 !important;
+}
