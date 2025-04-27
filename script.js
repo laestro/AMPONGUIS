@@ -11,8 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
         tamanhoAtualFonte -= 0.1;
         document.body.style.fontSize = `${tamanhoAtualFonte}rem`
     })
-})
-/* Estilo para o modo de alto contraste */
+    /* Estilo para o modo de alto contraste */
 .alto-contraste {
     background-color: #000 !important;
     color: #FFF !important;
@@ -32,3 +31,5 @@ document.addEventListener('DOMContentLoaded', function () {
     background-color: #FFF !important;
     color: #000 !important;
 }
+})
+
