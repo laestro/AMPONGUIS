@@ -140,3 +140,9 @@ h2 {
 .form-control {
     background-color: #F1EDEF;
 }
+
+// Alternar contraste
+const alternarContrasteBotao = document.getElementById('alternar-contraste');
+alternarContrasteBotao.addEventListener('click', function () {
+    document.body.classList.toggle('alto-contraste');
+});
