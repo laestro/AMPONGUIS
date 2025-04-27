@@ -1,35 +1,23 @@
 document.addEventListener('DOMContentLoaded', function () {
     let tamanhoAtualFonte = 1;
 
+    // Aumentar fonte
     const aumentaFonteBotao = document.getElementById('aumentar-fonte');
     aumentaFonteBotao.addEventListener('click', function () {
         tamanhoAtualFonte += 0.1;
-        document.body.style.fontSize = `${tamanhoAtualFonte}rem`
-    })
+        document.body.style.fontSize = `${tamanhoAtualFonte}rem`;
+    });
+
+    // Diminuir fonte
     const diminuirFonteBotao = document.getElementById('diminuir-fonte');
     diminuirFonteBotao.addEventListener('click', function () {
         tamanhoAtualFonte -= 0.1;
-        document.body.style.fontSize = `${tamanhoAtualFonte}rem`
-    })
-    /* Estilo para o modo de alto contraste */
-.alto-contraste {
-    background-color: #000 !important;
-    color: #FFF !important;
-}
+        document.body.style.fontSize = `${tamanhoAtualFonte}rem`;
+    });
 
-.alto-contraste a,
-.alto-contraste h1,
-.alto-contraste h2,
-.alto-contraste h3,
-.alto-contraste p,
-.alto-contraste label {
-    color: #FFF !important;
-}
-
-/* Mantém os botões visíveis */
-.alto-contraste .btn {
-    background-color: #FFF !important;
-    color: #000 !important;
-}
-})
-
+    // Alternar contraste
+    const alternarContrasteBotao = document.getElementById('alternar-contraste');
+    alternarContrasteBotao.addEventListener('click', function () {
+        document.body.classList.toggle('alto-contraste');
+    });
+});
